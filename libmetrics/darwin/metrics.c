@@ -11,7 +11,11 @@
 
 #include <stdlib.h>
 #include "interface.h"
+#include <AvailabilityMacros.h>
+#ifndef MAC_OS_X_VERSION_10_5
 #include <kvm.h>
+#endif
+
 #include <sys/sysctl.h>
 
 #include <mach/mach_init.h>
